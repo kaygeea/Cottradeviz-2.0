@@ -1,0 +1,50 @@
+{
+  "name": "cottradeviz",
+  "version": "2.0.0",
+  "description": "A web app that allows traders visualise and read commitment of traders (COT) data",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cottradeviz",
+    "commodity",
+    "trading",
+    "visualization",
+    "analysis",
+    "futures",
+    "market",
+    "data",
+    "insights",
+    "trends",
+    "charts",
+    "analytics",
+    "financial",
+    "investment",
+    "strategy",
+    "reporting",
+    "research"
+  ],
+  "author": {
+    "name": "Koyejo Adinlewa",
+    "email": "adinlewakoyejo@yahoo.com",
+    "url": "http://kaygeea.tech"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "url": "^0.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
