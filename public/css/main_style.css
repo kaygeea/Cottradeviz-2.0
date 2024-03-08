@@ -1,0 +1,231 @@
+/*
+=====================================
+Fonts - Inria Serif & Century Gothic
+=====================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../assets/CenturyGothic.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../assets/GOTHICB.TTF);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../assets/GOTHICBI.TTF);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../assets/GOTHICI.TTF);
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*
+=====================================
+Body
+=====================================
+*/
+body {
+    background-color: #B4A7D6;
+    font-family: 'Inria Serif', 'CenthuryGothic', serif;
+}
+
+/*
+=====================================
+Navbar
+=====================================
+*/
+#navbar {
+    background: linear-gradient(to top, rgba(120,11,219,0.65) 0%, rgba(93,48,243,0.35) 100%);
+}
+/*
+=====================================
+Navbar toggler
+=====================================
+*/
+.navbar-toggler {
+        border: 0;
+         width: 27px;
+        height: 20px;
+      position: relative;
+    transition: .20s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+       outline: none;
+    box-shadow: none;
+        border: 0;
+      position: relative
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(102deg, rgba(70,1,92,0.45) 0%, rgba(145,1,89,1) 100%);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    top: 10px;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* On navbar collapse */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    opacity: 1
+    /* filter: alpha(opacity=100); */
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+
+/* On navbar click */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    opacity: 0;
+    /* filter: alpha(opacity=0); */
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+/* Navbar line colours */
+.navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient(102deg, rgba(70,1,92,0.45) 0%, rgba(145,1,89,1) 100%);
+}
+
+/*
+=======================================
+Ticker
+=======================================
+*/
+@keyframes tickerAnimation {
+    100% {
+        transform: translateX(-100%);
+    }    
+}
+#ticker-container {
+    background: rgba(27, 27, 32, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ticker {
+    animation: tickerAnimation 40s infinite linear;
+}
+
+#ticker-container:hover .ticker {
+    animation-play-state: paused;
+}
+
+.change-net-position {
+    display: inline-block;
+    margin-right: 1.5em;
+    font-family: 'CenturyGothic', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* #ticker-label-container {
+    background: rgba(27, 27, 32, 0.75);
+} */
+.ticker-label {
+    font-style: italic;
+    font-size: x-small;
+    color: rgba(27, 27, 32, 0.75);
+}
+
+/* 
+=======================================
+Homepage welcome note
+=======================================
+*/
+.welcome-note {
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.welcome-note em {
+    color: darkmagenta;
+}
+
+/*
+=======================================
+Homepage get started button
+=======================================
+*/
+.btn.btn-primary.btn-lg {
+    background-color: #9900FF;
+              border: 0px;
+         font-weight: bold;
+       margin-bottom: 2em;
+    /*--bs-btn-font-weight: 600;
+    --bs-btn-background: var(--bs-purple-bg);
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-bg: var(--bd-violet-bg);*/
+}
+
+/*
+============================================
+Page footer
+============================================
+*/
+#footer {
+    background: #505050;
+    background: linear-gradient(to bottom, rgba(150,34,195,0.65) 0%, rgba(45,253,107,0.35) 100%);
+    font-size: medium;
+}
+i {
+    margin-right: 0.4em;
+}
